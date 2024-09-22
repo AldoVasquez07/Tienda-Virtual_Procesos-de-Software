@@ -1,0 +1,100 @@
+# Byte-compiled / optimized / DLL files for Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cython debug symbols
+*.pyd
+
+# PyCharm specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Virtual environment folders
+env/
+venv/
+ENV/
+.env/
+.venv/
+
+# Logs and databases
+*.log
+*.db
+*.sqlite3
+
+# Flask cache
+instance/
+*.pyc
+*.pyo
+
+# Static files cache (Flask)
+static/.webassets-cache
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# PyInstaller files
+*.manifest
+*.spec
+
+# Dist files
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Node.js specific files (JavaScript dependencies)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MacOS specific files
+.DS_Store
+
+# SASS/SCSS cache files
+.sass-cache/
+
+# Editor backups and temporary files
+*~
+*.swp
+*.swo
+
+# MyPy cache
+.mypy_cache/
+
+# Jinja templates (if Flask uses them)
+*.jinja
+
+# VSCode
+.vscode/
+
+# HTML/CSS/JavaScript specific
+*.min.js
+*.min.css
+*.map
+
+# Static assets
+static/
+
+# Exclude compiled JavaScript and CSS files
+*.bundle.js
+*.bundle.css
+
+# Flask environment variable files
+.env
