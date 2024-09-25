@@ -1,0 +1,4 @@
+SQL Server
+localhost
+db_supermercado
+yes
