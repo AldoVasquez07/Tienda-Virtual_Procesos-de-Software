@@ -1,18 +1,195 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Flask</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./static_css_java/style.css">
+    <title>EASYBUY</title>
 </head>
 <body>
-    <h1>¡Bienvenido!</h1>
-    <p>Probando codigo con FLASK.</p>
 
-    <button id="clickMe">Click!</button>
-    <p id="result"></p>
+   <div class="head">
+        
+        <div class="logo">
+            <a href="./index.html">EASYBUY</a>
+        
+        </div>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        <nav class="navbar">
+            <a href="./index.html">HOME</a>
+            <a href="./Copia de index 2.html">ACERCA DE NOSOTROS</a>
+            <a href="./index 2.html">TIENDA</a>
+            <a href="./login.html">LOGIN</a>
+        </nav>
+
+   </div>
+
+
+   <header class="content header">
+       <h2 class="title">EASYBUY</h2>
+       <p> 
+           COMPRAR TUS PRODUCTOS POR MAYOR, NUNCA FUE TAN FACIL
+       </p>
+       <a href="./login.html" class="btn">UNETE!</a>
+   </header>
+
+
+   <section class="content sau">
+       <h2 class="title">NUESTROS VALORES</h2>
+       
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa fa-users"></i>
+                <h3>COPERATIVIDAD</h3>
+                <p>ALIADOS CON LOS PRODUCTORES LOCALES</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-balance-scale"></i>
+                <h3>JUSTO</h3>
+                <p>PRECIO JUSTO EN TODOS NUESTROS PRODUCTOS</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-address-card"></i>
+                <h3>PERSONALIZADO</h3>
+                <p>ASISTENCIA RAPIDA Y PERSONALIZADA PORA CADA COMPRA</p>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-cubes"></i>
+                <h3>FRESCURA</h3>
+                <p>PRODUCTOS DE MANOS DE LOS PRODUCTORES,A TUS MANOS</p>
+            </div>
+
+        </div>
+
+   </section>
+
+   <section class="content price">
+
+        <article class="contain">
+
+            <h2 class="title">UNETE A NOSOTROS</h2>
+            <p>DESCUBRE TODOS NUESTROS PRODUCTOS
+            </p>
+            <a href="./login.html" class="btn">UNETE!</a>
+
+        </article>
+
+   </section>
+
+   <section class="content about">
+        <h2 class="title">NUESTRO EQUIPO</h2>
+        <p>SOMOS UN EQUIPO DINAMICO DE DESARROLLADORES, ENFOCADOS A INNOVAR PROYECTOS CREATIVOS QUE DEN SOLUCIONES EFECTIVAS
+            
+            
+        </p>
+        <div class="box-container2">
+
+            <div class="box">
+                <img src="./recursos/representacion.jpg" alt="">
+                <h3>ALDO Y </h3>
+                <p>MARIA FERNANDA</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <img src="./recursos/pic2.jpeg" alt="">
+                <h3>EVELYN Y</h3>
+                <p>ELIAS</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <img src="./recursos/representacion.jpg" alt="">
+                <h3>INTEGRANTE Y  </h3>
+                <p>INTEGRANTE</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+
+            </div>
+
+            <div class="box">
+                <img src="./recursos/representacion.jpg" alt="">
+                <h3>INTEGRANTE Y </h3>
+                <p>INTEGRANTE</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <img src="./recursos/representacion.jpg" alt="">
+                <h3>INTEGRANTE Y </h3>
+                <p>INTEGRANTE</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+        </div>
+        
+   </section>
+
+   <section class="content contact">
+        <h2 class="title">CONTACTANOS</h2>
+
+        <div class="footer-section">
+
+            <div>
+                <p>+51666666666666</p>
+            </div>
+
+            <div class="f-enlaces">
+                <a href="#">AV.ALFONSO UGARTE 517</a>
+                <a href="#">AREQUIPA</a>
+                <a href="#">Y EL GOGOGO</a>
+            </div>
+
+            
+
+            <figure>
+                <img src="./recursos/maps.jpeg" height="220px" width="100%" alt="mapa">
+            </figure>
+
+        </div>
+
+   </section>
+    
 </body>
 </html>
