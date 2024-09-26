@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from modelos.login import gestor_login
 
 app = Flask(__name__, static_folder='../static', template_folder='../templates')
@@ -16,10 +16,10 @@ def login():
         password = request.form['password']
         user, case = gestor_login(email, password)
 
-        if case:
-            flash('Inicio de sesión exitoso', 'success')
+        if user:
+            return jsonify({"message": "Inicio de sesión exitoso", "user": user.__dict__}), 200
         else:
-            flash('Credenciales incorrectas', 'danger')
+            return jsonify({"message": "Credenciales incorrectas"}), 401
 
 
     return render_template('login.html')
