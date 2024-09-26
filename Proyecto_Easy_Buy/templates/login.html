@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inicio de Sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" class="login-form">
+            <h2>Iniciar Sesión</h2>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <div class="password-input">
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="togglePassword" class="toggle-password">
+                        <span class="show-password">👁️</span>
+                        <span class="hide-password" style="display: none;">🔒</span>
+                    </button>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Iniciar Sesión</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/login_script.js') }}"></script>
+</body>
+</html>

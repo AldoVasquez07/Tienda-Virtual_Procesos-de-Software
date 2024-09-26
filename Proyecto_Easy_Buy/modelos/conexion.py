@@ -2,7 +2,7 @@ import pyodbc
 
 
 def aspectos_bd():
-    with open("ambiente/configuracion.txt", "r") as aspectos:
+    with open("../ambiente/configuracion.txt", "r") as aspectos:
         return [line.strip() for line in aspectos.readlines() if line.strip()]
 
 

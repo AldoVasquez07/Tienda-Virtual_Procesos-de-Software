@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>EASYBUY</title>
 </head>
 <body>
 
    <div class="head">
-        
+
         <div class="logo">
             <a href="./index.html">EASYBUY</a>
-        
+
         </div>
 
         <nav class="navbar">
             <a href="./index.html">HOME</a>
             <a href="./Copia de index 2.html">ACERCA DE NOSOTROS</a>
             <a href="./index 2.html">TIENDA</a>
-            <a href="./login.html">LOGIN</a>
+            <a href="{{ url_for ('login')}}">LOGIN</a>
         </nav>
 
    </div>
@@ -29,7 +29,7 @@
 
    <header class="content header">
        <h2 class="title">EASYBUY</h2>
-       <p> 
+       <p>
            COMPRAR TUS PRODUCTOS POR MAYOR, NUNCA FUE TAN FACIL
        </p>
        <a href="./login.html" class="btn">UNETE!</a>
@@ -38,7 +38,7 @@
 
    <section class="content sau">
        <h2 class="title">NUESTROS VALORES</h2>
-       
+
 
         <div class="box-container">
 
@@ -86,8 +86,8 @@
    <section class="content about">
         <h2 class="title">NUESTRO EQUIPO</h2>
         <p>SOMOS UN EQUIPO DINAMICO DE DESARROLLADORES, ENFOCADOS A INNOVAR PROYECTOS CREATIVOS QUE DEN SOLUCIONES EFECTIVAS
-            
-            
+
+
         </p>
         <div class="box-container2">
 
@@ -129,7 +129,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    
+
                 </div>
 
             </div>
@@ -163,7 +163,7 @@
             </div>
 
         </div>
-        
+
    </section>
 
    <section class="content contact">
@@ -181,7 +181,7 @@
                 <a href="#">Y EL GOGOGO</a>
             </div>
 
-            
+
 
             <figure>
                 <img src="./recursos/maps.jpeg" height="220px" width="100%" alt="mapa">
@@ -190,6 +190,6 @@
         </div>
 
    </section>
-    
+
 </body>
 </html>
